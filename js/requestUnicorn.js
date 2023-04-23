@@ -10,27 +10,27 @@ const ddb = new AWS.DynamoDB.DocumentClient();
 
 const fleet = [
 	{
-		Name: 'Matthew Bradley 1',
+		Name: 'MatthewBradley1',
 		Color: 'Golden',
 		Gender: 'Male',
 	},
 	{
-		Name: 'Matthew Bradley 2',
+		Name: 'MatthewBradley2',
 		Color: 'Mean Green',
 		Gender: 'Male',
 	},
 	{
-		Name: 'Matthew Bradley 3',
+		Name: 'MatthewBradley3',
 		Color: 'Royal Blue',
 		Gender: 'Male',
 	},
 	{
-		Name: 'Matthew Bradley 4',
+		Name: 'MatthewBradley4',
 		Color: 'White',
 		Gender: 'Male',
 	},
 	{
-		Name: 'Matthew Bradley 5',
+		Name: 'MatthewBradley5',
 		Color: 'Yellow',
 		Gender: 'Female',
 	},

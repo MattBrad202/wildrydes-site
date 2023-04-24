@@ -10,27 +10,27 @@ const ddb = new AWS.DynamoDB.DocumentClient();
 
 const fleet = [
 	{
-		Name: 'MatthewBradley1',
+		Name: 'Bucephalus',
 		Color: 'Golden',
 		Gender: 'Male',
 	},
 	{
-		Name: 'MatthewBradley2',
+		Name: 'Scrappy',
 		Color: 'Mean Green',
 		Gender: 'Male',
 	},
 	{
-		Name: 'MatthewBradley3',
+		Name: 'Cosmo',
 		Color: 'Royal Blue',
 		Gender: 'Male',
 	},
 	{
-		Name: 'MatthewBradley4',
+		Name: 'Shadowfax',
 		Color: 'White',
 		Gender: 'Male',
 	},
 	{
-		Name: 'MatthewBradley5',
+		Name: 'Rocinante',
 		Color: 'Yellow',
 		Gender: 'Female',
 	},
@@ -94,7 +94,7 @@ exports.handler = (event, context, callback) => {
 // For simplicity, we'll just pick a unicorn at random.
 function findUnicorn(pickupLocation) {
 	console.log('Finding unicorn for ', pickupLocation.Latitude, ', ', pickupLocation.Longitude);
-	return fleet[0];
+	return fleet[Math.floor(Math.random() * fleet.length)];
 }
 
 function recordRide(rideId, username, unicorn) {
